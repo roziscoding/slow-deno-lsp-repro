@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "mtkruto/": "https://deno.land/x/mtkruto@0.1.707/"
+  }
+}
