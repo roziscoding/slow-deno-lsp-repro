@@ -1,12 +1,9 @@
 import { Client, StorageLocalStorage } from "mtkruto/mod.ts";
 
 const client = new Client({
-  storage: new StorageLocalStorage("key"),
-  apiId: 123,
-  apiHash: "redacted",
+  storage: new StorageLocalStorage(""),
+  apiId: 0,
+  apiHash: "",
 });
-client.importAuthString("redacted");
 
-client.on("message:text", (ctx, next) => {
-  if (!ctx.me || ctx.from?.id !== ctx.me.id) return next();
-});
+client.on("message:text", (ctx, next) => {});
